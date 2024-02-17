@@ -26,7 +26,7 @@ const TodoInput = () => {
           placeholder="Add Todo"
           value={todo}
         />
-        <Button variant="outline-secondary" id="button-addon2" type="submit" className="d-flex align-items-center">
+        <Button variant="outline-primary" id="button-addon2" type="submit" className="d-flex align-items-center">
           <FaPlus />
           Add Todo
         </Button>

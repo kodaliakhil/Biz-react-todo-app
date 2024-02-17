@@ -19,12 +19,12 @@ export default function TaskProvider({ children }) {
   };
   const addTask = (task) =>
     setTasks([
-      ...tasks,
       {
         id: v4(),
         title: task,
         status: false,
       },
+      ...tasks,
     ]);
   function filterChange(f) {
     setFilter(f);

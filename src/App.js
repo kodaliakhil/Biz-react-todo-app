@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./components/Navbar/Navbar";
 import TodoInput from "./components/TodoInput/TodoInput";
 import TodoList from "./components/TodoList/TodoList";
-import FilterDD from "./components/FilterDD/FilterDD";
 import { Stack } from "react-bootstrap";
 
 const App = () => {
@@ -16,12 +15,16 @@ const App = () => {
         <Row>
           <Header />
         </Row>
-        <Row>
-          <TodoInput />
-        </Row>
-        <Row>
-          <TodoList />
-        </Row>
+        <Container style={{ maxWidth: "600px" }}>
+          <Stack gap={3}>
+            <Row>
+              <TodoInput />
+            </Row>
+            <Row>
+              <TodoList />
+            </Row>
+          </Stack>
+        </Container>
       </Stack>
     </Container>
   );
